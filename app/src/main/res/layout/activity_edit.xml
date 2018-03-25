@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.admin.demo.EditActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="359dp"
+        android:layout_height="491dp"
+        tools:layout_editor_absoluteX="9dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="42dp"
+            android:layout_toLeftOf="@+id/btnDelete"
+            android:layout_toStartOf="@+id/btnDelete"
+            android:text="Details"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/edit_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/edit_phno"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="27dp"
+            android:ems="10"
+            android:hint="Fullname"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/edit_phno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnEdit"
+            android:layout_alignLeft="@+id/edit_name"
+            android:layout_alignStart="@+id/edit_name"
+            android:layout_marginBottom="23dp"
+            android:ems="10"
+            android:hint="Phone number"
+            android:inputType="phone" />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btnViewMap"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="14dp"
+            android:layout_marginLeft="63dp"
+            android:layout_marginStart="63dp"
+            android:text="Update" />
+
+        <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/btnEdit"
+            android:layout_alignBottom="@+id/btnEdit"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/btnAddMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/btnEdit"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnEdit"
+            android:layout_marginBottom="69dp"
+            android:text="Add Map" />
+
+        <Button
+            android:id="@+id/btnViewMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnDelete"
+            android:layout_alignRight="@+id/btnDelete"
+            android:layout_alignTop="@+id/btnAddMap"
+            android:text="View Map" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
